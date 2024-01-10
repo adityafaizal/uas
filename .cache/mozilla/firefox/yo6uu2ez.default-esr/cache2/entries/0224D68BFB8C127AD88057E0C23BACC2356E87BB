@@ -1,0 +1,494 @@
+WEBVTT
+
+NOTE Generated with Flickify Captions Generator v0.1.6
+
+1
+00:00:00.000 --> 00:00:03.942
+Linux dominates the field of
+that make up the Internet.
+
+2
+00:00:03.942 --> 00:00:10.047
+Apache, Nginx, Lighttpd, OpenLiteSpeed are
+of the web servers available for Linux.
+
+3
+00:00:10.047 --> 00:00:13.485
+In this article, we are going to
+discuss Nginx and see how to install
+
+4
+00:00:13.485 --> 00:00:16.059
+it along with PHP on Debian 10.
+
+5
+00:00:16.440 --> 00:00:19.307
+What is Nginx?
+
+6
+00:00:19.307 --> 00:00:25.637
+Nginx is an open-source web server for
+Linux, Unix, and Unix-alike systems.
+
+7
+00:00:25.637 --> 00:00:29.355
+It is Apache‚Äôs main competitor.
+
+8
+00:00:29.355 --> 00:00:33.472
+The main advantage of Nginx is
+performance in high traffic.
+
+9
+00:00:33.472 --> 00:00:38.785
+You can also use it as a reverse proxy,
+HTTP cache, load balancer, and proxy
+
+10
+00:00:38.785 --> 00:00:42.847
+server for email (IMAP, POP3, and SMTP).
+
+11
+00:00:43.227 --> 00:00:48.845
+The efficient design of Nginx, makes it
+other web servers in performance tests.
+
+12
+00:00:48.845 --> 00:00:52.157
+It is a perfect fit and excels in
+situations where there is a high
+
+13
+00:00:52.157 --> 00:00:54.444
+level of traffic or requests.
+
+14
+00:00:54.825 --> 00:00:58.037
+That is the reason many giant
+companies use it for their websites
+
+15
+00:00:58.037 --> 00:01:00.212
+or internal web applications.
+
+16
+00:01:00.592 --> 00:01:04.147
+Install Nginx on Debian.
+
+17
+00:01:04.147 --> 00:01:07.902
+Usually, there is only
+web server in a system.
+
+18
+00:01:07.902 --> 00:01:12.095
+This is not mandatory but it is common.
+
+19
+00:01:12.095 --> 00:01:17.350
+In this guide, we will assume that the server
+ready and has not suffered many changes.
+
+20
+00:01:17.350 --> 00:01:20.830
+This means that there is
+webserver running on it.
+
+21
+00:01:20.830 --> 00:01:24.542
+Since Nginx is so popular, it is not
+surprising that it is included in
+
+22
+00:01:24.542 --> 00:01:27.279
+the official Debian 10 repositories.
+
+23
+00:01:27.660 --> 00:01:32.902
+Login to your Debian system and run the
+command in sequence to install Nginx.
+
+24
+00:01:32.902 --> 00:01:33.857
+1.
+
+25
+00:01:33.857 --> 00:01:37.637
+Check if Nginx available
+the Debian repository.
+
+26
+00:01:37.637 --> 00:01:42.355
+As mentioned above, Nginx should
+available in the Debian repository.
+
+27
+00:01:42.355 --> 00:01:45.872
+Run the below command to check it.
+
+28
+00:01:45.872 --> 00:01:50.685
+:~$ sudo apt list nginx You will get a
+screen output similar to this one: That
+
+29
+00:01:50.685 --> 00:01:54.097
+is, we will install version 1.14.2.
+
+30
+00:01:54.477 --> 00:01:58.232
+The version may be slightly older.
+
+31
+00:01:58.232 --> 00:02:02.125
+But you should not worry as
+is fairly stable and robust.
+
+32
+00:02:02.125 --> 00:02:03.080
+2.
+
+33
+00:02:03.080 --> 00:02:06.169
+Install Nginx.
+
+34
+00:02:06.169 --> 00:02:09.424
+We are going to use
+apt command to install.
+
+35
+00:02:09.424 --> 00:02:13.554
+This command takes care of
+dependencies during installation.
+
+36
+00:02:13.554 --> 00:02:19.046
+:~$ sudo apt install nginx Enter
+password to begin the installation.
+
+37
+00:02:19.046 --> 00:02:23.539
+In the end, the service will be active
+enabled to start with the system.
+
+38
+00:02:23.539 --> 00:02:27.101
+Use the below command to start and
+stop the Nginx service using systemctl
+
+39
+00:02:27.101 --> 00:02:32.613
+command :~$ sudo systemctl stop
+nginx:~$ sudo systemctl start nginx.
+
+40
+00:02:32.994 --> 00:02:34.036
+3.
+
+41
+00:02:34.036 --> 00:02:37.354
+Configure the firewall.
+
+42
+00:02:37.354 --> 00:02:41.996
+You need to configure the firewall so
+your server can accept the connection.
+
+43
+00:02:41.996 --> 00:02:47.496
+Open the port 80 and 443 using the command
+given below :~$ sudo ufw allow Nginx
+
+44
+00:02:47.496 --> 00:02:53.108
+HTTP You can check the status using the
+command given below :~$ sudo ufw status.
+
+45
+00:02:53.489 --> 00:02:54.494
+4.
+
+46
+00:02:54.494 --> 00:02:57.424
+Test your server.
+
+47
+00:02:57.424 --> 00:03:04.236
+Open the web browser and type
+http://IP-ADDRESS or http://domain-name
+
+48
+00:03:04.236 --> 00:03:07.286
+to find out if everything went well
+You should see an image like this that
+
+49
+00:03:07.286 --> 00:03:09.923
+indicates that Nginx is working properly.
+
+50
+00:03:10.304 --> 00:03:14.034
+Install PHP on Debian.
+
+51
+00:03:14.034 --> 00:03:18.164
+PHP is a widely used
+scripting language.
+
+52
+00:03:18.164 --> 00:03:22.256
+It is also available in
+10 default repository.
+
+53
+00:03:22.256 --> 00:03:26.049
+So you do not have to
+any third-party PPA.
+
+54
+00:03:26.049 --> 00:03:30.374
+To install PHP and some of its main
+modules just run the following command:
+
+55
+00:03:30.374 --> 00:03:38.861
+:~$ sudo apt install php7.3-fpm
+php7.3-common php7.3-mysql php7.3-gmp
+
+56
+00:03:38.861 --> 00:03:50.399
+php7.3-curl php7.3-intl php7.3-mbstring
+php7.3-xmlrpc php7.3-gd php7.3-xml
+
+57
+00:03:50.399 --> 00:03:58.736
+php7.3-cli php7.3-zip php7.3-soap
+php7.3-imap Now, both Nginx and PHP are
+
+58
+00:03:58.736 --> 00:04:03.898
+properly installed, you need to configure
+Nginx to be able to interpret PHP files.
+
+59
+00:04:04.279 --> 00:04:07.484
+Let‚Äôs see how to do that.
+
+60
+00:04:07.484 --> 00:04:11.401
+Adding PHP support to Nginx.
+
+61
+00:04:11.401 --> 00:04:17.651
+Go to /var/www/html/ directory where
+files and website are processed
+
+62
+00:04:17.651 --> 00:04:21.151
+in Debian and change the owner,
+permissions to this directory.
+
+63
+00:04:21.531 --> 00:04:32.631
+:~$ sudo chmod 755 -R /var/www/html/
+:~$ sudo chown www-data:www-data -R
+
+64
+00:04:32.631 --> 00:04:39.893
+/var/www/html/ This will save you problems
+with running websites and applications.
+
+65
+00:04:40.274 --> 00:04:45.279
+Next, you need to make some changes
+the default Nginx configuration file.
+
+66
+00:04:45.279 --> 00:04:50.271
+This file configures the pages and
+that are in the default root directory.
+
+67
+00:04:50.271 --> 00:04:54.901
+So if you add a virtual host you
+to make a new configuration file.
+
+68
+00:04:54.901 --> 00:04:57.944
+So, edit it.
+
+69
+00:04:57.944 --> 00:05:03.444
+:~$ sudo nano
+/etc/nginx/sites-available/default Find
+
+70
+00:05:03.444 --> 00:05:07.856
+the location section, the file is not
+very large so you will find it quickly.
+
+71
+00:05:08.236 --> 00:05:15.361
+So, let it be like this: location ~ \.php$
+{ include snippets/fastcgi-php.conf;
+
+72
+00:05:15.361 --> 00:05:19.674
+# With php-fpm (or other
+unix sockets): fastcgi_pass
+
+73
+00:05:19.674 --> 00:05:28.311
+unix:/var/run/php/php7.3-fpm.sock;
+# With php-cgi (or other tcp
+
+74
+00:05:28.311 --> 00:05:35.724
+sockets): # fastcgi_pass 127.0.0.1:9000;
+} Save the changes and close the editor.
+
+75
+00:05:36.610 --> 00:05:40.202
+Test PHP with Nginx.
+
+76
+00:05:40.202 --> 00:05:44.202
+Now, to test that PHP is interpreted
+by Nginx, let‚Äôs create a new
+
+77
+00:05:44.202 --> 00:05:46.677
+file containing some PHP code.
+
+78
+00:05:47.057 --> 00:05:51.987
+So, in the Nginx root directory, create
+new one with the phpinfo method.
+
+79
+00:05:51.987 --> 00:06:00.542
+:~$ sudo nano /var/www/html/test.php ?
+
+80
+00:06:00.542 --> 00:06:03.785
+php phpinfo(); ?
+
+81
+00:06:03.785 --> 00:06:07.540
+Likewise, save the
+and close the file.
+
+82
+00:06:07.540 --> 00:06:12.207
+For all changes in Nginx to take
+the service must be restarted.
+
+83
+00:06:12.207 --> 00:06:17.082
+:~$ sudo systemctl restart nginx And you can
+check the service status with the following
+
+84
+00:06:17.082 --> 00:06:21.407
+command: :~$ sudo systemctl status
+nginx Now, open your web browser again and
+
+85
+00:06:21.407 --> 00:06:30.995
+open the file: http://IP-ADDRESS/test.php
+or http://domain-name/test.php So,
+
+86
+00:06:30.995 --> 00:06:35.332
+Nginx and PHP have correctly installed
+on Debian 10 Everything went well.
+
+87
+00:06:35.712 --> 00:06:38.480
+Conclusion.
+
+88
+00:06:38.480 --> 00:06:42.067
+With Nginx, we can conclude that it
+is a very efficient web server and
+
+89
+00:06:42.067 --> 00:06:46.392
+above all willing to give the maximum
+possible performance in a lot of traffic.
+
+90
+00:06:46.772 --> 00:06:51.022
+Also, to make it work with PHP, it
+requires a little more configuration
+
+91
+00:06:51.022 --> 00:06:54.622
+than Apache, but it is not
+complicated either and it‚Äôs worth it.
+
+92
+00:06:55.002 --> 00:06:58.377
+On the other hand, Nginx is a pretty
+popular program with a lot of
+
+93
+00:06:58.377 --> 00:07:00.652
+documentation to read and study.
+
+94
+00:07:01.032 --> 00:07:05.137
+Now it is your turn, do you like Nginx?
+
+95
+00:07:05.137 --> 00:07:07.519
+or do you prefer Apache.
+t¯º÷?9      eõúÅeõúÅFoMõeƒd0   ë    O^partitionKey=%28https%2Citslinuxfoss.com%29,a,:https://video-meta.humix.com/caption/bLfevnmbujPODUIq/e18ca7b085ad64b8697215cd89326a0d_en-US.vtt necko:classified 1 strongly-framed 1 security-info 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 request-method GET request-Origin https://itslinuxfoss.com request-Accept-Encoding gzip, deflate, br response-head HTTP/2 200 OK
+date: Mon, 08 Jan 2024 05:18:43 GMT
+content-type: text/vtt; charset=utf-8
+content-length: 8433
+access-control-allow-origin: *
+access-control-allow-methods: GET
+last-modified: Fri, 19 May 2023 05:40:53 GMT
+etag: "e18ca7b085ad64b8697215cd89326a0d"
+x-amz-server-side-encryption: AES256
+content-language: en-US
+vary: Origin, Accept-Encoding
+x-cache: Hit from cloudfront
+via: 1.1 6080b2713e502211e152f21f5c59c5a6.cloudfront.net (CloudFront)
+x-amz-cf-pop: FRA53-C1
+x-amz-cf-id: t8VpS7GPC6bEsO_vv5ij_MMnpRWNcYgtXn-RyJSICq4S11mjP5dJZw==
+cache-control: max-age=2678400
+cf-cache-status: MISS
+accept-ranges: bytes
+report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5pjRCHrNzoWERygLFMasjBqbXzFLdK5l3Qq0hm9B8WvypZfwyEgvIEdT%2FEj%2Bafeou6V7YBuPPwmBmoWSx5zXp9BvI4KQoQaJbxJ3q8aiNjeGPtBwm8lSv4jcLrxsqB9V8LRKysx9%2Bg%3D%3D"}],"group":"cf-nel","max_age":604800}
+nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+server: cloudflare
+cf-ray: 8421fb3defa118be-SIN
+alt-svc: h3=":443"; ma=86400
+X-Firefox-Spdy: h2
+ original-response-headers date: Mon, 08 Jan 2024 05:18:43 GMT
+content-type: text/vtt; charset=utf-8
+content-length: 8433
+access-control-allow-origin: *
+access-control-allow-methods: GET
+last-modified: Fri, 19 May 2023 05:40:53 GMT
+etag: "e18ca7b085ad64b8697215cd89326a0d"
+x-amz-server-side-encryption: AES256
+content-language: en-US
+vary: Origin, Accept-Encoding
+x-cache: Hit from cloudfront
+via: 1.1 6080b2713e502211e152f21f5c59c5a6.cloudfront.net (CloudFront)
+x-amz-cf-pop: FRA53-C1
+x-amz-cf-id: t8VpS7GPC6bEsO_vv5ij_MMnpRWNcYgtXn-RyJSICq4S11mjP5dJZw==
+cache-control: max-age=2678400
+cf-cache-status: MISS
+accept-ranges: bytes
+report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5pjRCHrNzoWERygLFMasjBqbXzFLdK5l3Qq0hm9B8WvypZfwyEgvIEdT%2FEj%2Bafeou6V7YBuPPwmBmoWSx5zXp9BvI4KQoQaJbxJ3q8aiNjeGPtBwm8lSv4jcLrxsqB9V8LRKysx9%2Bg%3D%3D"}],"group":"cf-nel","max_age":604800}
+nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+server: cloudflare
+cf-ray: 8421fb3defa118be-SIN
+alt-svc: h3=":443"; ma=86400
+X-Firefox-Spdy: h2
+ ctid 1 net-response-time-onstart 3494 net-response-time-onstop 3495    Ò
