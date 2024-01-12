@@ -1,4 +1,4 @@
-classify-client.services.mozilla.com:HSTS	4	19734	1736509953885,1,0,2
+classify-client.services.mozilla.com:HSTS	4	19734	1736602859259,1,0,2
 hub.docker.com^partitionKey=%28http%2Cdocker.com%29:HSTS	0	19732	1736383117098,1,0,2
 adisaputra-id.medium.com^partitionKey=%28http%2Cmedium.com%29:HSTS	0	19732	1720399748617,1,1,2
 firefox.settings.services.mozilla.com:HSTS	4	19734	1736597194615,1,0,2
@@ -14,7 +14,7 @@ belajarlinux.id^partitionKey=%28http%2Cbelajarlinux.id%29:HSTS	0	19731	173638070
 api.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	2	19734	1736598793342,1,1,2
 igunawan.com^partitionKey=%28http%2Cigunawan.com%29:HSTS	0	19731	1767914689157,1,1,2
 aus5.mozilla.org:HSTS	3	19734	1736597420719,1,0,2
-shavar.services.mozilla.com^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:HSTS	4	19734	1736509813148,1,1,2
+shavar.services.mozilla.com^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:HSTS	4	19734	1736604052060,1,1,2
 collector.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	2	19734	2336201312423,1,0,2
 glyph.medium.com^partitionKey=%28http%2Cmedium.com%29:HSTS	0	19732	1720399749266,1,1,2
 location.services.mozilla.com:HSTS	0	19730	1736226007240,1,1,2
