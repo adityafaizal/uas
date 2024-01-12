@@ -19,6 +19,7 @@ collector.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	2	19734	233620131
 glyph.medium.com^partitionKey=%28http%2Cmedium.com%29:HSTS	0	19732	1720399749266,1,1,2
 location.services.mozilla.com:HSTS	0	19730	1736226007240,1,1,2
 www.mozilla.org^partitionKey=%28http%2Cmozilla.org%29:HSTS	0	19730	1736226008222,1,0,2
-docs.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	1	19733	1736531419046,1,0,2
+github.blog^partitionKey=%28http%2Cgithub.blog%29:HSTS	0	19734	1736602047206,1,1,2
+docs.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	2	19734	1736622591957,1,0,2
 normandy.cdn.mozilla.net:HSTS	3	19734	1736509953346,1,0,2
 login.docker.com^partitionKey=%28http%2Cdocker.com%29:HSTS	0	19732	1736383121007,1,1,2
