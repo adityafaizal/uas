@@ -3,7 +3,7 @@
   <context id="">
     <application id="org.gnome.Software.desktop" score="0" last-seen="1704689930"/>
     <application id="gnome-initial-setup.desktop" score="5" last-seen="1704689631"/>
-    <application id="org.gnome.Terminal.desktop" score="3176" last-seen="1704859031"/>
-    <application id="firefox-esr.desktop" score="411" last-seen="1704859032"/>
+    <application id="org.gnome.Terminal.desktop" score="3433" last-seen="1705062841"/>
+    <application id="firefox-esr.desktop" score="559" last-seen="1705062978"/>
   </context>
 </application-state>
