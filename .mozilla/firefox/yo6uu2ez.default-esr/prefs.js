@@ -14,7 +14,7 @@ user_pref("app.normandy.migrationsApplied", 12);
 user_pref("app.normandy.user_id", "0a330c73-a082-420e-b5e7-4c2a0358c8fc");
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1705061420);
-user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1705064779);
+user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1705068379);
 user_pref("app.update.lastUpdateTime.recipe-client-addon-run", 1705066859);
 user_pref("app.update.lastUpdateTime.region-update-timer", 1704690755);
 user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1705066739);
